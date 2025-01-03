@@ -7,7 +7,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note  
     activate server
-    Note right of browser: Form Data note: This is a new note.
+    Note right of browser: Form Data { "content": "This is a new note", "date": "2025-1-3" }
     server-->>browser: Request to redirect to /notes
     deactivate server    
 
